@@ -12,7 +12,84 @@
         </div>
       </div>
     </div>
+    <div class="reports__items">
+      <div class="reports__items--item">
+        <h2 class="item-total">1000<span>$</span></h2>
+        <p class="item-p mb-0">Total Value of Disbustment</p>
 
+        <div class="policy">
+          <div class="policy__top">
+            <p class="policy-p">Policy</p>
+            <p class="policy-total mb-0">400<span>$</span></p>
+          </div>
+          <div class="policy__progress">
+            <div class="policy__progress--inner"> </div>
+          </div>
+        </div>
+
+        <div class="claim">
+          <div class="claim__top">
+            <p class="claim-p">claim</p>
+            <p class="claim-total mb-0">400<span>$</span></p>
+          </div>
+          <div class="claim__progress">
+            <div class="claim__progress--inner"> </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="reports__items--item">
+        <h2 class="item-total">2500<span>$</span></h2>
+        <p class="item-p mb-0 ">Total Value of Disbustment</p>
+
+        <div class="policy">
+          <div class="policy__top">
+            <p class="policy-p">Policy</p>
+            <p class="policy-total mb-0">400<span>$</span></p>
+          </div>
+          <div class="policy__progress">
+            <div class="policy__progress--inner"> </div>
+          </div>
+        </div>
+
+        <div class="claim">
+          <div class="claim__top">
+            <p class="claim-p">claim</p>
+            <p class="claim-total mb-0">400<span>$</span></p>
+          </div>
+          <div class="claim__progress">
+            <div class="claim__progress--inner"> </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="reports__items--item">
+        <h2 class="item-total">2500<span>$</span></h2>
+        <p class="item-p mb-0">Total Value of Disbustment</p>
+
+        <div class="policy">
+          <div class="policy__top">
+            <p class="policy-p">Policy</p>
+            <p class="policy-total mb-0">400<span>$</span></p>
+          </div>
+          <div class="policy__progress">
+            <div class="policy__progress--inner"> </div>
+          </div>
+        </div>
+
+        <div class="claim">
+          <div class="claim__top">
+            <p class="claim-p">claim</p>
+            <p class="claim-total mb-0">400<span>$</span></p>
+          </div>
+          <div class="claim__progress">
+            <div class="claim__progress--inner"> </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
   </div>
 </template>
 
@@ -40,7 +117,7 @@ export default {
 
     .area-2{
       position: absolute;
-      top: 43px;
+      top: 46px;
       left: 0;
       opacity: 0.1;
     }
@@ -90,8 +167,125 @@ export default {
     }
 
   }
-}
+  &__items{
+    margin-top: 20px;
+    max-width: 98.1rem;
+    display: flex;
+    justify-content: space-between;
 
+    &--item{
+      width: 314px;
+      height: 298px;
+      background-color: #fff; 
+      border-radius: 4px;
+      box-shadow: 3px 3px 4px rgba($color: #000000, $alpha: 0.06);
+      padding: 28px;
+      padding-top: 3px;
+
+      .item-total{
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 73px;
+        color: var(--app-grey-1);
+        position: relative;
+        width: max-content;
+        span{
+          position: absolute;
+          top: -15px;
+          right:-18px;
+          font-size: 35px;
+          color: var(--app-purple-1);
+        }
+      }
+      .item-p{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 23px;
+        color: var(--app-grey-1);
+        margin-top: 3px;
+      }
+
+     
+    }
+     .policy{
+       margin-top: 5rem;
+        &__top{
+          display: flex;
+          justify-content: space-between;
+          .policy-p{
+            font-size: 17px;
+            color: var(--app-grey-1);
+            margin-bottom: 8px;
+          }
+          
+          .policy-total{
+            font-size: 22px;
+            color: var(--app-grey-1);
+            position: relative;
+            margin-bottom: 8px;
+            span{
+              font-size: 13px;
+              color: var(--app-purple-1);
+              position: absolute;
+              top: -0px;
+              right: -8px;
+            }
+          }
+        }
+        &__progress{
+          
+          background-image: linear-gradient(to right, #ECECEC, #F2F1F1) !important;
+          border-radius: 2px;
+          height: 5px;
+          &--inner{
+            background-image: linear-gradient(to right, #33D69F, #50EDB8) !important;
+            width: 60%;
+            border-radius: 2px;
+            height: 5px;
+          }
+        }
+      }
+     .claim{
+       margin-top: 4.7rem;
+        &__top{
+          display: flex;
+          justify-content: space-between;
+          .claim-p{
+            font-size: 17px;
+            color: var(--app-grey-1);
+            margin-bottom: 8px;
+          }
+          
+          .claim-total{
+            margin-bottom: 8px;
+            font-size: 22px;
+            color: var(--app-grey-1);
+            position: relative;
+            span{
+              font-size: 13px;
+              color: var(--app-purple-1);
+              position: absolute;
+              top: -0px;
+              right: -8px;
+            }
+          }
+        }
+        &__progress{
+          
+          background-image: linear-gradient(to right, #ECECEC, #F2F1F1) !important;
+          border-radius: 2px;
+          height: 5px;
+          &--inner{
+            width: 80%;
+            background-image: linear-gradient(to right, #713BDB, #A886E9) !important;
+            border-radius: 2px;
+            height: 5px;
+          }
+        }
+      }
+  }
+
+}
 
 
 </style>
