@@ -20,33 +20,33 @@
     <div class="side-tab">
       <div class="side-tab__item">
         <OverviewIcon/>
-        <p class="mb-0">Overview</p>
+        <p>Overview</p>
       </div>
       <div class="side-tab__item">
         <PolicyIcon/>
-        <p class="mb-0">Policy</p>
+        <p>Policy</p>
       </div>
       <div class="side-tab__item">
         <ReportIcon/>
-        <p class="mb-0">Report</p>
+        <p>Report</p>
       </div>
       <div class="side-tab__item">
         <CompanyIcon/>
-        <p class="mb-0">Company</p>
+        <p>Company</p>
       </div>
       <div class="side-tab__item">
         <UserAccountIcon/>
-        <p class="mb-0">User Account</p>
+        <p>User Account</p>
       </div>
       <div class="side-tab__item">
         <HistoryIcon/>
-        <p class="mb-0">History</p>
+        <p>History</p>
       </div>
     </div>
 
     <div class="logout">
       <LogoutIcon/>
-      <p class="mb-0">Log Out</p>
+      <p>Log Out</p>
     </div>
   </div>
 </template>
@@ -136,7 +136,7 @@ export default {
       margin-top: 3px;
       color: var(--app-purple-2);
       .plan{
-        color: #33d69f;
+        color: rgb(0, 255, 191);
       }
     }
     &__create--btn{

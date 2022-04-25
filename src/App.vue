@@ -1,15 +1,10 @@
 <template>
-  <v-app>
-    <v-main>
-      
-        <div class="dashbord__container">
-          <Sidebar/>
-          <MainContent/>
-        </div>
-
-     
-    </v-main>
-  </v-app>
+  <div id="app">
+    <div class="dashbord__container">
+      <Sidebar/>
+      <MainContent/>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -39,7 +34,7 @@ export default {
 
 @font-face {
   font-family: "Segoe UI";
-  src: url("./assets/fonts/SEGOEUI.TTF");
+  src: url("./assets/fonts/Segoe UI.ttf");
 }
 *,
 *::before,
@@ -50,30 +45,24 @@ export default {
 }
 
 html {
-  font-size: 62.5% !important;
-  box-sizing: border-box !important;
-  overflow-y: auto !important;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow: auto !important;
 }
 body{
-  
+  background: #e5e5e5;
   width: 100%;
   height: 100vh;
-
-  position: relative;
-  height: inherit;
 }
 #app {
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI";
   position: relative;
   height: inherit;
-}
-.v-main{
-  background: #e5e5e5 !important;
 }
 
 .dashbord__container{
   width: 90vw;
-  min-height: 95vh;
+  min-height: 90vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,6 +71,5 @@ body{
   border-radius: 20px;
   display: flex;
 } 
-
+ 
 </style>
-
